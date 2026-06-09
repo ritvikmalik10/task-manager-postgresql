@@ -48,7 +48,7 @@
     <td>{{ task[0] }}</td>
     <td>{{ task[1] }}</td>
     <td>{{ task[2] }}</td>
-    <td>{{ task[3] }}</td>
+    <td>{{ task[3].strftime('%d %b %Y, %I:%M %p') }}</td>
 
     <td>
         {% if task[2] == 'Pending' %}
