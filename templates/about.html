@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/tasks">Tasks</a>
+    <a href="/add">Add Task</a>
+    <a href="/about" class="active">About</a>
+</div>
+
+<div class="container">
+
+<h1>About Task Manager</h1>
+
+<p>
+
+
+Task Manager is a web-based productivity application developed using Flask and PostgreSQL. The purpose of this project is to help users organize, manage, and track their daily tasks efficiently.
+
+This application allows users to create new tasks, view existing tasks, update task details, mark tasks as completed, and delete tasks when they are no longer needed. The project follows the CRUD (Create, Read, Update, Delete) principle and demonstrates the integration of a Flask web application with a PostgreSQL database.
+
+The frontend of the application is built using HTML and CSS, providing a clean and user-friendly interface. The backend is powered by Python Flask, which handles routing, user requests, and database operations. PostgreSQL is used to securely store task information and maintain data consistency.
+
+Key Features:
+• Add new tasks
+• View all tasks in a structured table
+• Update existing tasks
+• Mark tasks as completed
+• Delete tasks
+• Modern and responsive user interface
+• PostgreSQL database integration
+
+This project was developed as a practical learning experience to understand Python web development, database management, Flask routing, templates, forms, and full CRUD operations. It serves as a strong foundation for building more advanced web applications in the future.
+
+</p>
+
+<ul>
+    <li>Add Tasks</li>
+    <li>View Tasks</li>
+    <li>Update Tasks</li>
+    <li>Delete Tasks</li>
+    <li>Mark Tasks Complete</li>
+</ul>
+
+</div>
+
+</body>
+</html>

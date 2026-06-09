@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="/" class="active">Home</a>
+    <a href="/tasks">Tasks</a>
+    <a href="/add">Add Task</a>
+    <a href="/about">About</a>
+</div>
+
+<div class="container">
+
+    <h1>Task Manager Dashboard</h1>
+
+    <p style="text-align:center; margin-bottom:30px;">
+        Manage your daily tasks efficiently with Flask and PostgreSQL.
+    </p>
+
+    <div class="cards">
+
+        <div class="card total-card">
+            <h2>Total Tasks</h2>
+            <p>{{ total_tasks }}</p>
+        </div>
+
+        <div class="card completed-card">
+            <h2>Completed</h2>
+            <p>{{ completed_tasks }}</p>
+        </div>
+
+        <div class="card pending-card">
+            <h2>Pending</h2>
+            <p>{{ pending_tasks }}</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>
+        Task Manager © 2026 | Built with Flask & PostgreSQL
+    </p>
+</footer>
+
+</body>
+</html>

@@ -5,7 +5,7 @@ conn = psycopg2.connect(
     host="localhost",
     database="taskmanager",
     user="postgres",
-    password="your_password",
+    password="dataanalyst",
     port="5432"
 )
 
